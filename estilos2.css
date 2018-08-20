@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #fff;
+}
+
+
+.container{
+    min-height: 100%;
+    position: static;
+    overflow: hidden;
+}
+
+.menu{   
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    width: 230px;
+    z-index: 810;  
+    background-color: #25354c;
+}
+
+
+.cuerpo{
+    padding: 0px 20px 0px 20px;
+    margin-left: 230px;
+    height: 665px;
+    min-height: 100%;
+}
+
+
+
+.fa{
+  margin-right: 10px;
+}
+
+.m1{display: none;}
+
+.accordion-menu {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 250px;
+  background: #fff;
+}
+
+.accordion-menu li.open .dropdownlink {
+  color: #fff;
+  background-color: #516b82;
+}
+
+.accordion-menu li.open .dropdownlink .fa-chevron-down {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+
+.accordion-menu li:last-child .dropdownlink {
+  border-bottom: 0;
+}
+
+.dropdownlink {
+  cursor: pointer;
+  display: block;
+  padding: 15px 15px 15px 45px;
+  border-bottom: 1px solid #25354c;
+  color: #91a9ba;
+  position: relative;
+  transition: all 0.4s ease-out;
+  background: #2f435b;
+  font-size: 17px;
+}
+
+.dropdownlink:hover{
+    background-color: #516b82;
+  color: #fff;
+}
+
+.dropdownlink i {
+  position: absolute;
+  top: 17px;
+  left: 16px;
+}
+.dropdownlink span {
+  font-size: 15px;
+}
+
+.dropdownlink .fa-chevron-down {
+  right: 12px;
+  left: auto;
+}
+
+.submenuItems {
+  display: none;
+  background: #3b4d65;
+}
+
+.submenuItems a {
+    text-decoration: none;
+  display: block;
+  color: #fff;
+  padding: 10px 10px 10px 30px;
+  transition: all 0.1s ease-out;
+}
+.submenuItems a:hover {
+  background-color: #516b82;
+  color: #fff;
+  border-left: solid 5px #3a84c3;
+}
+
+.submenuItems a i{
+  margin-right: 20px;
+}
+
+
+.submenuItems  li.open .fa-angle-right:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+
+/*SEcCION logo*/
+.logo{
+  height: 50px;
+  width: 100%;
+  background-color: blue;
+}
+
+/*FIN*/
+
+/*SEcCION IMAGEN USUARIO*/
+.info-img{
+  width: 100%;
+  background-color: #2f435b;
+  padding:20px 0px 20px 0px
+}
+
+.info-img .img{
+  width: 45%;
+  height: 95px;
+  margin:auto;
+  position: relative;
+  border-radius: 50%;
+}
+
+
+.info-img .img img{
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+}
+
+
+.info-img p{
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+}
+/*FIN*/
+
+.btn-menu {
+    display: none;
+    padding: 15px;
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.btn-menu i {
+   margin-left: 20px;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+     body {
+        padding-top: 80px;
+      }
+
+      .menu{
+        margin: 0px;
+        width: 100%;
+        position: fixed;
+        top:0px;
+      }
+
+      .info-img{
+        display: none;
+      }
+
+      .logo{
+        display: none;
+      }
+
+      .btn-menu {
+        background-color: red;
+        display: block;
+        position: absolute;
+        top: 0px;
+        z-index: 1000;
+        width: 94%;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .m2{display: none;}
+
+      .accordion-menu {
+        margin:0px;
+        width: 100%;
+        max-width: 1000px;
+        position: absolute;
+        top: 55px;
+        z-index: 1000;    
+      }
+
+      .cuerpo{
+        top: -25px;
+        margin-left:0px;
+        position: relative;
+        z-index: 999;
+    }
+
+    .container{
+        min-height: 100%;
+        position: static;
+        overflow: visible;
+    }
+ 
+
+}
+
+
+h2{background-color: #fff;padding: 10px;border-bottom: 0.5px solid gray}
+
+.wrap{
+    width: 100%;
+    height: 80px;
+}
+
+.lista{
+    margin-top: 20px;
+    width: 100%;
+    height: 60px;
+    text-align: left;
+}
+
+.lista a{
+    color: #00b291;
+    text-decoration: none;
+    background-color: #fff;
+    width: 300px;
+    display: inline;
+    text-align: center;
+    padding: 8px;
+    border:1px solid #00b291;
+    border-radius: 5px;
+    margin: 5px;
+    position: relative;
+}
+
+.lista a:hover{
+    background-color: #00b291;
+    color: #fff;
+}
+
+ .add{ text-align: right;position: relative;top: -60px; }
+
+ .add a{
+    color: #00b291;
+    text-decoration: none;
+    background-color: #fff;
+    width: 300px;
+    display: inline;
+    text-align: center;
+    padding: 8px;
+    border:1px solid #00b291;
+    border-radius: 5px;
+    margin: 5px;
+    position: relative;
+    top: 30px;
+}
+
+ .add .agregar{color: #fff;border:none;background-color: #3882c1; border:solid 1px blue;}
+ .add .agregar:hover{background-color: #1361a0;}
+
+
+ .add .delete{ background-color: #db6967; border:solid 1px red;color: #fff}
+ .add .delete:hover{background-color: #d38a89;color: #9b5655;}
+
+.form{
+    width: 50%;
+    height: 115px;
+    display: inline;
+}
+
+.form form{
+     position: relative;
+    margin-left: 5px;
+    display: inline;
+}
+
+.form form input{
+     padding:10px 8px 8px 8px;
+     text-decoration: none;
+     border: none;
+     border-radius: 3px;
+     border:1px solid gray;
+}
+.form form input[type="submit"]{
+    margin-left: 10px;
+    padding:8px 8px 7px 8px;
+     width: 80px;
+     font-size: 17px;
+     background-color: #3882c1;
+     color: #fff;
+     border:none;
+     cursor: pointer;
+}
+
+
+.listado{
+    height: 100%;
+    width: 100%;
+}
+
+
+table{
+    background-color: white;
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td{
+    padding: 12px;
+}
+
+tbody tr td{
+    padding:10px;
+}
+
+thead{
+    background-color: #93aabc;
+   /* border-bottom: solid 5px #0F362D;*/
+    color: white;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+ }
+
+tr:nth-child(even){
+    background-color: #ddd;
+}
+
+tr:hover td{
+    background-color: #9cc8ed;
+    color: white;
+}
+
+tr td a{
+    font-size: 15px;
+     color: #fff;
+    text-decoration: none;
+    background-color: #00b291;
+    display: inline;
+    text-align: center;
+    padding: 6px;
+    border:1px solid #00b291;
+    border-radius: 5px;
+    margin: 5px;
+}
+.fa{display: none;}
+
+/*
+
+.lista text aling center
+
+lista adds 
+text-align: center;
+    position: relative;
+    top: 40px;
+
+
+.form form 
+    top: 70px;
+
+
+botones 
+
+padding 10px 60px 10px 60px
+*/
